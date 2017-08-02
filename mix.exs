@@ -5,6 +5,8 @@ defmodule TvmazeWrapper.Mixfile do
     [app: :tvmaze_wrapper,
      version: "0.1.0",
      elixir: "~> 1.4",
+     description: "Elixir wrapper for the tvmaze.com API",
+     package: package(),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
@@ -30,6 +32,18 @@ defmodule TvmazeWrapper.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:httpoison, "~> 0.12"},
-     {:poison, "~> 3.1"}]
+     {:poison, "~> 2.0"},
+     {:ex_doc, ">= 0.0.0", only: :dev}]
+  end
+
+  defp package do
+    # These are the default files included in the package
+    [
+      name: :tvmaze_wrapper,
+      files: ["lib", "mix.exs", "README.md", "LICENSE"],
+      maintainers: ["Jeremy Montesinos"],
+      licenses: ["MIT License"],
+      links: %{"GitHub" => "http://framagit.org/mjerem34/tvmaze_elixir_wrapper"}
+    ]
   end
 end
