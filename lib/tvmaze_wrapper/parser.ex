@@ -1,5 +1,5 @@
 defmodule TvmazeWrapper.Parser do
-  def parse_show_without_cast(%{body: body}) do
+  def parse_show(%{body: body}) do
     body = Poison.decode!(body)
     %{
       link: body["_links"]["self"],

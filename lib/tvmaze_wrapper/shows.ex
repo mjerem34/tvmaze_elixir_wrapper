@@ -6,6 +6,6 @@ defmodule TvmazeWrapper.Shows do
     "/shows/" <> show_id
     |> Base.process_url
     |> HTTPoison.get!()
-    |> Parser.parse_cast()
+    |> Parser.parse_show()
   end
 end
