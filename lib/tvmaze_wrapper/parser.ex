@@ -22,4 +22,9 @@ defmodule TvmazeWrapper.Parser do
     body
     |> Poison.decode!()
   end
+
+  def parse_episodes(%{body: body}) do
+    body
+    |> Poison.decode!()
+  end
 end
