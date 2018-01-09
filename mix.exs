@@ -3,8 +3,8 @@ defmodule TvmazeWrapper.Mixfile do
 
   def project do
     [app: :tvmaze_wrapper,
-     version: "0.1.3",
-     elixir: "~> 1.4",
+     version: "0.1.4",
+     elixir: "~> 1.6.0-rc.0",
      description: "Elixir wrapper for the tvmaze.com API",
      package: package(),
      build_embedded: Mix.env == :prod,
@@ -32,7 +32,7 @@ defmodule TvmazeWrapper.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:httpoison, "~> 0.12"},
-     {:poison, "~> 2.0"},
+     {:poison, "~> 3.1.0"},
      {:ex_doc, ">= 0.0.0", only: :dev}]
   end
 
