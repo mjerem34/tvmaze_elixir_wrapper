@@ -3,8 +3,8 @@ defmodule TvmazeWrapper.Mixfile do
 
   def project do
     [app: :tvmaze_wrapper,
-     version: "0.1.4",
-     elixir: "~> 1.6.0-rc.0",
+     version: "0.1.5",
+     elixir: "~> 1.11.3",
      description: "Elixir wrapper for the tvmaze.com API",
      package: package(),
      build_embedded: Mix.env == :prod,
@@ -43,7 +43,7 @@ defmodule TvmazeWrapper.Mixfile do
       files: ["lib", "mix.exs", "README.md", "LICENSE"],
       maintainers: ["Jeremy Montesinos"],
       licenses: ["MIT License"],
-      links: %{"GitHub" => "http://framagit.org/mjerem34/tvmaze_elixir_wrapper"}
+      links: %{"GitHub" => "https://github.com/mjerem34/tvmaze_elixir_wrapper"}
     ]
   end
 end
