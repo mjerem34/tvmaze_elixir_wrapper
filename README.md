@@ -13,7 +13,15 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/tvmaze_wrapper](https://hexdocs.pm/tvmaze_wrapper).
+## Update deps
 
+```bash
+$ mix deps.update --all
+```
+
+## Command line test
+
+```
+$ iex -S mix
+iex(1)>
+```

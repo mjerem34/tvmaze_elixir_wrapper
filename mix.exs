@@ -3,8 +3,8 @@ defmodule TvmazeWrapper.Mixfile do
 
   def project do
     [app: :tvmaze_wrapper,
-     version: "0.1.5",
-     elixir: "~> 1.11.3",
+     version: "0.1.6",
+     elixir: "~> 1.13.4",
      description: "Elixir wrapper for the tvmaze.com API",
      package: package(),
      build_embedded: Mix.env == :prod,
